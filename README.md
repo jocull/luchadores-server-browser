@@ -4,12 +4,21 @@ The server to see all the other servers. Who watches the watchers?
 
 This server creates a client-accessible list of all running Luchadores servers that report to it.
 
-## Hosting
-To build the project, run:
+## Prerequisites
+This is a Node.js 22 project. Install and use the right Node version with NVM (`.nvmrc` pins it):
 
-`$ npm run build` - Build project
+```
+nvm install lts/jod
+nvm use lts/jod
+```
 
-`$ npm run rebuild` - Cleans and builds project
+## Getting Started
+Install dependencies, then build the project:
 
+`$ npm install` - Install dependencies
 
-To host the server, run `$ npm start`. From there you should be able to connect to the according port. The default port is 3500.
+`$ npm run build` - Build the project
+
+`$ npm run rebuild` - Clean and build the project
+
+To start the server, run `$ npm start`. It listens on a fixed port (default is `3500`); browse to `http://localhost:3500/` from a client.
